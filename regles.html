@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Rules - Virtual Hunt</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('forest.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            color: #ffffff;
+            height: 100vh;
+            backdrop-filter: blur(10px);
+            overflow: hidden;
+        }
+        header {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: left;
+            margin: 10px;
+            flex-wrap: wrap;
+            margin-left: 2cm;
+        }
+        .rule {
+            width: 250px;
+            padding: 20px;
+            border-radius: 20px;
+            background-color: rgba(255, 255, 255, 0.1);
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-right: 2cm;
+            margin-top: 3cm;
+        }
+        footer {
+            background-color: rgba(0, 0, 0, 0);
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        #logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 65px;
+            max-width: 100px;
+            height: auto;
+        }
+        .tab {
+            display: inline-block;
+            margin-right: 20px;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            border: 2px solid #ffffff;
+        }
+        .tab:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+        .rules-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+        }
+        .rule-box {
+            flex: 1;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 20px;
+            padding: 20px;
+            margin: 200px;
+            margin-right: 10;
+        }
+        h2 {
+            padding-bottom: 10px;
+        }
+        p {
+            margin-top: 10px;
+        }
+        .rule-box:last-child {
+          margin-right: 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="tt_cerf-removebg-preview.png" alt="Logo Hunter or Deer" id="logo">
+    <h1>RULES</h1>
+    <nav>
+        <a href="index.html" class="tab">Home</a>
+        <a href="regles.html" class="tab">Rules</a>
+        <a href="role.html" class="tab">Roles</a>
+        <a href="map.html" class="tab">Map</a>
+        <a href="about.html" class="tab active">About</a>
+    </nav>
+</header>
+
+<main>
+    <div class="rule">
+        <h2>GOALS</h2>
+        <p>The game takes place in a virtual world where players are divided into three camps: Deer, Bears, and Hunters.</p>
+        <p>The goal of the Deer is to survive and avoid being hunted and killed by Bears and Hunters.</p>
+        <p>Bears attempt to hunt and kill Deer while avoiding being killed by Hunters.</p>
+        <p>Hunters hunt Deer and Bears while being wary of other Hunters.</p>
+    </div>
+    <div class="rule">
+        <h2>PROGRESSION</h2>
+        <p>Each player starts as a level 1 Deer.</p>
+        <p>To progress, Deer must avoid being successfully hunted until reaching level 10.</p>
+        <p>Once becoming a level 10 Bear, the player can hunt and kill Deer while avoiding being killed by Hunters.</p>
+        <p>Bears can progress to become level 10 Hunters by hunting and killing Deer and Bears.</p>
+    </div>
+    <div class="rule">
+        <h2>MECHANICS</h2>
+        <p>To initiate a hunt as a Bear or Hunter, go to the hunting map and identify your prey.</p>
+        <p>When you are close enough, the "Hunt Complete" button will light up, allowing you to confirm your kill.</p>
+        <p>Deer receive warnings when Bears or Hunters approach, giving them a chance to escape or hide.</p>
+        <p>Players must cooperate and compete to survive and progress in the game.</p>
+    </div>
+</main>
+
+<footer>
+    <p>© 2024 Hunter or Deer. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
